@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eksperimen Mandiri JavaScript</title>
+</head>
+<body>
+  <h1>Eksperimen Mandiri</h1>
+
+  <!-- G1: operasi dasar dari prompt -->
+  <h2>1. Operasi Dasar (prompt)</h2>
+  <button type="button" id="btnOperasi">Mulai</button>
+  <pre id="hasilOperasi"></pre>
+
+  <!-- G2: tabel perkalian 7 -->
+  <h2>2. Tabel Perkalian 7</h2>
+  <pre id="tabelKali"></pre>
+
+  <!-- G3: cekGenap -->
+  <h2>3. cekGenap(angka)</h2>
+  <input type="number" id="inputGenap" step="1">
+  <button type="button" id="btnGenap">Cek</button>
+  <p id="hasilGenap"></p>
+
+  <!-- G4: validasi form -->
+  <h2>4. Validasi Form</h2>
+  <form id="formDaftar" novalidate>
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama"><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email"><br>
+    <button type="submit">Kirim</button>
+  </form>
+  <p id="pesanForm"></p>
+
+  <!-- G5: menu makanan (ditambah 2 pilihan) -->
+  <h2>5. Daftar Menu Makanan</h2>
+  <label><input type="checkbox" class="menu" value="5000"> Ayam Goreng — Rp5.000</label><br>
+  <label><input type="checkbox" class="menu" value="500"> Tempe — Rp500</label><br>
+  <label><input type="checkbox" class="menu" value="2500"> Telur Dadar — Rp2.500</label><br>
+  <label><input type="checkbox" class="menu" value="3000"> Nasi Putih — Rp3.000</label><br>
+  <label><input type="checkbox" class="menu" value="2000"> Es Teh — Rp2.000</label><br>
+  <p>Total: Rp<span id="total">0</span></p>
+
+  <!-- G6: tampil/sembunyi elemen -->
+  <h2>6. Tampil / Sembunyikan</h2>
+  <button type="button" id="btnToggle">Sembunyikan</button>
+  <p id="teksToggle">Teks ini bisa disembunyikan dan ditampilkan lagi.</p>
+
+  <script src="script_eks.js"></script>
+</body>
+</html>
